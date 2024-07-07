@@ -36,8 +36,9 @@ main {
 }
 
 
-body p, li {
+main p, main ul {
     font: 20px/1.5 normal Arial, sans-serif;
+    margin-top: 20px;
 }
 
 
@@ -46,9 +47,6 @@ body li {
     margin-left: 25px;
 }
 
-main p{
-    margin-top: 20px;
-}
 
 body {
     font-family: Arial, sans-serif;
@@ -80,11 +78,15 @@ section {
     display: flex;
     flex-direction: column;
     height: auto;
+    width: 600px;
     
 }
 
 .main-container {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     height: 100%;
