@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/rsschool-cv/style.css">
+    <link rel="stylesheet" href="/style.css">
     <title>Document</title>
 </head>
 
@@ -39,12 +39,10 @@
 
             <section id = "contacts">
                 <h2>Contacts</h2>
-                <p>
-                    <ul>
-                        <li>Telegram: @ukorp</li>
-                        <li>Discord: Укорп (@ukorp)</li>
-                    </ul>
-                </p>
+                <ul>
+                    <li>Telegram: @ukorp</li>
+                    <li>Discord: Укорп (@ukorp)</li>
+                </ul>
             </section>
 
             <section id = "about-me">
@@ -60,7 +58,8 @@
             <section id = "code-example">
                 <h2>Code example</h2>
                 <p>
-                    LeetCode <a href = "https://leetcode.com/problems/zigzag-conversion/description/">6. Zigzag Conversion</a>
+                    LeetCode <a href = "https://leetcode.com/problems/zigzag-conversion/description/" style = "text-decoration: none">6. Zigzag Conversion</a>
+                </p>
                     <pre><code>
 class Solution {
         public:
@@ -68,15 +67,15 @@ class Solution {
                 std::string answer;
                 int size = s.length();
                 if (numRows == 1) return s; 
-                for (int i = 0; i < numRows; ++i)
+                for (int i = 0; i &lt; numRows; ++i)
                 {
-                    for (int j = i; j < size; j += 2 * (numRows - 1))
+                    for (int j = i; j &lt; size; j += 2 * (numRows - 1))
                     {
                         answer += s[j];
                         if (i != 0 && i != numRows - 1)
                         {
                             int index = j + 2 * (numRows - 1 - i);
-                            if (index < size)
+                            if (index &lt; size)
                                 answer += s[index];
                         }
                     }
@@ -85,22 +84,19 @@ class Solution {
             }
         };
                         </code></pre>
-                </p>
             </section>
 
             <section id = "expirience">
                 <h2>Expirience</h2>
-                <p>No experience</p>
+                <p>No expirience</p>
             </section>
 
             <section id = "education">
                 <h2>Education</h2>
-                <p>
-                    <ul>
-                        <li>3rd year Moscow Aviation Institute (MAI) Computer Science student</li>
-                        <li>Beijing Institute of Technology (BIT) exchange programme (1 semester)</li>
-                    </ul>
-                </p>
+                <ul>
+                    <li>3rd year Moscow Aviation Institute (MAI) Computer Science student</li>
+                    <li>Beijing Institute of Technology (BIT) exchange programme (1 semester)</li>
+                </ul>
             </section>
 
             <section id = "english-level">
@@ -114,13 +110,13 @@ class Solution {
 
     <footer>
         <div class = "footer">
-            <p font-position = "center">2024</p>
+            <p>2024</p>
             <a href="https://rs.school/courses/javascript-ru">
                 
                 <img src="https://raw.githubusercontent.com/rolling-scopes-school/tasks/34c6c5cbc96ec26fcfdb022d1a6f3b2641f0110c/tasks/cv/rs-school-logo.svg" alt="RS School" width="75">
             </a>
 
-            <a href="https://github.io/ukorp">
+            <a href="https://github.com/Ukorp">
                 
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/1200px-Octicons-mark-github.svg.png" alt="GitHub" width="40">
             </a>
